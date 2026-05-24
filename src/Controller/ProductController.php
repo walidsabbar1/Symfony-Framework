@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 class ProductController extends AbstractController
 {
-    #[Route('/products', name: 'product_list')]
+    #[Route('/', name: 'product_list')]
     public function list(EntityManagerInterface $entityManager): Response
     {
         // Get all products from database
